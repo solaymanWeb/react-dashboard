@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'
 import Logo from "../assets/images/logo.png"
-import { NavLink, useLocation } from 'react-router'
+import { Link, NavLink, useLocation } from 'react-router'
 import { IoAnalytics, IoSettingsOutline } from "react-icons/io5";
 import { LuMessageCircleQuestion } from 'react-icons/lu';
 import { GoQuestion } from 'react-icons/go';
@@ -58,9 +58,11 @@ export default function Sidebar({ setSidebar }) {
 
 
     return (
-        <div className='' >
+        <div className='h-[100vh bg-red-500]' >
             <div className="logo mb-[50px]">
-                <img src={Logo} alt="" className='w-[100px] mx-auto' />
+                <Link to="/">
+                    <img src={Logo} alt="" className='w-[100px] mx-auto' />
+                </Link>
             </div>
 
             <div className='flex flex-col gap-[50px]' >

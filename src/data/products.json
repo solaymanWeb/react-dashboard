@@ -1,0 +1,86 @@
+[
+  {
+    "orderId": "#888",
+    "date": "23 Jan 2021",
+    "time": "08:28 PM",
+    "customer": {
+      "name": "John Doe",
+      "avatar": "../assets/images/profile-pic.webp"
+    },
+    "items": [
+      {
+        "name": "Mexican Vegetables and Salad",
+        "description": "Vegetable Fritters with Egg",
+        "price": 5.3,
+        "quantity": 1,
+        "image": "../assets/images/product-1.png"
+      },
+      {
+        "name": "Mexican Vegetables and Salad",
+        "description": "Vegetable Fritters with Egg",
+        "price": 5.3,
+        "quantity": 1,
+        "image": "../assets/images/product-1.png"
+      }
+    ],
+    "totalItems": 2,
+    "totalPrice": 10.6,
+    "status": "accepted"
+  },
+  {
+    "orderId": "#888",
+    "date": "23 Jan 2021",
+    "time": "08:28 PM",
+    "customer": {
+      "name": "Jane Smith",
+      "avatar": "../assets/images/profile-pic.webp"
+    },
+    "items": [
+      {
+        "name": "Mexican Vegetables and Salad",
+        "description": "Vegetable Fritters with Egg",
+        "price": 5.3,
+        "quantity": 1,
+        "image": "../assets/images/product-1.png"
+      },
+      {
+        "name": "Mexican Vegetables and Salad",
+        "description": "Vegetable Fritters with Egg",
+        "price": 5.3,
+        "quantity": 1,
+        "image": "../assets/images/product-1.png"
+      }
+    ],
+    "totalItems": 2,
+    "totalPrice": 10.6,
+    "status": "rejected"
+  },
+  {
+    "orderId": "#888",
+    "date": "23 Jan 2021",
+    "time": "08:28 PM",
+    "customer": {
+      "name": "Mark Wilson",
+      "avatar": "../assets/images/profile-pic.webp"
+    },
+    "items": [
+      {
+        "name": "Mexican Vegetables and Salad",
+        "description": "Vegetable Fritters with Egg",
+        "price": 5.3,
+        "quantity": 1,
+        "image": "../assets/images/product-1.png"
+      },
+      {
+        "name": "Mexican Vegetables and Salad",
+        "description": "Vegetable Fritters with Egg",
+        "price": 5.3,
+        "quantity": 1,
+        "image": "../assets/images/product-1.png"
+      }
+    ],
+    "totalItems": 2,
+    "totalPrice": 10.6,
+    "status": "processing"
+  }
+]

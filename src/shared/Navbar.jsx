@@ -6,6 +6,7 @@ import { FaBars } from 'react-icons/fa';
 import Select from '../components/Common/ReactSelect';
 import Notifications from '../components/Common/Notifications';
 import SearchBox from '../components/Common/SearchBox';
+import { IoSearchOutline } from 'react-icons/io5';
 
 export default function Navbar({ handelSidebar, openBtn }) {
 
@@ -32,16 +33,33 @@ export default function Navbar({ handelSidebar, openBtn }) {
 
 
 
+    const [searchState, setSearchState] = useState(false)
+
+    function searchFunc() {
+        setSearchState(!searchState)
+    }
 
 
     return (
         <div className='flex justify-between items-center p-[15px] lg:py-[24px] lg:ps-[24px] lg:pr-[40px] bg-white'>
             <div>
-                <h4 className='md:text-[24px] text-[18px] leading-[20px] font-medium'>Dashboard Overview</h4>
+                <h4 className='md:text-[24px] text-[18px] xl:text-[21px] 2xl:text-[24px] leading-[25px] font-medium pr-[10px]'>Dashboard Overview</h4>
             </div>
-            <div className='flex gap-[20px]'>
-                <div>
-                    <SearchBox></SearchBox>
+            <div className='flex gap-[20px] items-center'>
+                <div className='relative'>
+
+                    <div onClick={searchFunc} className='block xl:hidden'>
+                        <div className='flex items-center justify-center h-[49px]'>
+                            <button className='text-[24px] text-[#919eab]'><IoSearchOutline /></button>
+                        </div>
+                    </div>
+
+                    {searchState ? (<div className='block absolute left-0 top-[60px]'>
+                        <SearchBox></SearchBox>
+                    </div>) : (<div className='hidden'>
+                        <SearchBox></SearchBox>
+                    </div>)}
+
                 </div>
                 <div className='hidden md:block'>
                     {/* Language select options */}

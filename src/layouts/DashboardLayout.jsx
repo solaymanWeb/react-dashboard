@@ -39,12 +39,12 @@ export default function DashboardLayout({ }) {
 
                     </div>
 
-                    <div className={`w-[250px] min-w-[250px] lg:w-[320px] lg:min-w-[320px] hidden-scrollbar text-[#919EAB] py-[30px] h-[100vh] bg-primaryBlack fixed lg:sticky top-0 overflow-auto transition-all duration-500 ease-in-out z-[999] lg:translate-x-0 lg:opacity-100  ${sidebar ? "translate-x-0 opacity-100" : " -translate-x-full opacity-0"}`} >
+                    <div className={`w-[250px] min-w-[250px] lg:w-[300px] lg:min-w-[300px] hidden-scrollbar text-[#919EAB] py-[30px] h-[100vh] bg-primaryBlack fixed top-0 left-0 bottom-0 overflow-auto transition-all duration-500 ease-in-out z-[999] lg:translate-x-0 lg:opacity-100  ${sidebar ? "translate-x-0 opacity-100" : " -translate-x-full opacity-0"}`} >
                         <Sidebar setSidebar={setSidebar} />
                     </div>
                 </div>
 
-                <div className='w-[100%] min-h-[100vh] bg-primaryBg'>
+                <div className='w-[100%] min-h-[100vh] bg-primaryBg lg:ml-[300px]'>
 
                     <div className='sticky top-0'>
                         <Navbar handelSidebar={handelSidebar} openBtn={openBtn} />

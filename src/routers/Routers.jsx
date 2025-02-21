@@ -12,6 +12,8 @@ import OrderRequests from "../pages/Order/OrderRequests";
 import OrderList from "../pages/Order/OrderList";
 import Profile from "../pages/Profile/Profile";
 import Notifications from "../pages/Notifications/Notifications";
+import AcceptDaliveryMan from "../components/Dashboard/AcceptDaliveryMan";
+import PickUpDaliveryMan from "../components/Dashboard/PickUpDaliveryMan";
 
 
 
@@ -72,7 +74,12 @@ const Routers = createBrowserRouter([
             {
                 path: "/notifications",
                 element: <Notifications/>
-            }
+            },
+            {
+                path: "/accept-delivery-man",
+                element:<AcceptDaliveryMan/>
+            },
+          
 
         ]
 
